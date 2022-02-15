@@ -5,7 +5,7 @@ import datetime
 # Решето эратосфена для поиска простых чисел
 def eratosfen_sieve(max_number):
     n = 2
-    len_of_lst = max_number
+    len_of_lst = max_number + 1
     sieve = [x for x in range(len_of_lst)]
     sieve[1] = 0
     while n < len_of_lst:
