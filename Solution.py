@@ -51,9 +51,9 @@ for i in range(3, rows+1):
     cell = sheet.cell(row=i, column=3)
     if cell.value > max_value:
         max_value = cell.value
-# на основании макимума составляем список простых чисел не более максимального
+# на основании максимума составляем список простых чисел не более максимального
 simple_lst = eratosfen_sieve(max_value)
-# сверяем все числа на предмет нахождения в списке и те? что есть в нем, считаем
+# сверяем все числа на предмет нахождения в списке и те, что есть в нем, считаем
 for i in range(3, rows+1):
     cell = sheet.cell(row=i, column=3)
     if cell.value in simple_lst:
